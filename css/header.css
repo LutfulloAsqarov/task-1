@@ -1,0 +1,114 @@
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 25px 0;
+}
+
+.show-navshrink {
+    box-shadow: 0px 0px 10px skyblue;
+    background: #fff;
+    z-index: 99;
+}
+
+.header__nav-logo {
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.header__nav-btns {
+    gap: 20px;
+}
+
+.header__nav-list {
+    gap: 10px;
+}
+
+.header__nav-link {
+    padding: 3px 10px;
+    border: 1.5px solid transparent;
+    border-radius: 3px;
+    font-size: 18px;
+    font-family: sans-serif;
+    transition: 0.5s;
+}
+
+.header__nav-link:hover {
+    color: white;
+    background-color: black;
+    box-shadow: 3px 4px rgb(82, 81, 81), 7px 7px 15px rgba(0, 0, 0, 0.541);
+}
+
+.header__nav__btn {
+    border: 2px solid black;
+    padding: 8px 18px;
+    border-radius: 3px;
+    font-size: 17px;
+    background-color: transparent;
+    transition: 0.5s;
+}
+
+.header__nav__btn:hover {
+    color: white;
+    background: black;
+    box-shadow: 3px 4px rgb(82, 81, 81), 7px 7px 15px rgba(0, 0, 0, 0.541);
+}
+
+.header__nav__hamburger-btn {
+    border: none;
+    background: transparent;
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.header__nav__hamburger-btn span {
+    width: 20px;
+    height: 2.5px;
+    border-radius: 2px;
+    background: black;
+}
+
+@media (max-width: 920px) {
+    .header__nav-link {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 800px) {
+    .header__nav-list {
+        position: fixed;
+        top: 0;
+        left: -100%;
+        width: 50%;
+        height: 100vh;
+        background-color: #fff;
+        flex-direction: column;
+        justify-content: center;
+        gap: 20px;
+        box-shadow: 0px 0px 15px skyblue;
+        transition: 0.3s;
+    }
+
+    .header__nav-item::after {
+        height: 2px;
+    }
+
+    .header__nav__hamburger-btn {
+        display: flex;
+    }
+
+    .show-header__nav-list {
+        left: 0;
+    }
+
+    .header__nav__btn {
+        padding: 5px 15px;
+        font-size: 14px;
+    }
+}
+
+main {
+    padding-top: 100px;
+}

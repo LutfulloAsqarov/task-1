@@ -1,0 +1,59 @@
+#about {
+    padding: 40px 0;
+}
+
+.about__left {
+    width: 50%;
+}
+
+.about__left .section__title {
+    text-align: start;
+}
+
+.about__text {
+    font-size: 16px;
+    padding: 20px 0px;
+    color: #8f95a5;
+    font-family: sans-serif;
+}
+
+.about__cards {
+    justify-content: space-evenly;
+}
+
+.about__card {
+    text-align: center;
+}
+
+.about__card-title {
+    font-size: 30px;
+    color: #2a3246;
+    font-family: sans-serif;
+}
+
+.about__card-text {
+    font-size: 14px;
+    color: #8f95a5;
+    font-family: sans-serif;
+}
+
+.about__right {
+    width: 50%;
+}
+
+.about__right img {
+    width: 100%;
+}
+
+@media (max-width: 600px) {
+    #about > .df {
+        flex-direction: column-reverse;
+    }
+
+    .about__right {
+        width: 100%;
+    }
+    .about__left {
+        width: 100%;
+    }
+}
